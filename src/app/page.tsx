@@ -39,7 +39,7 @@ export default function HomePage() {
       setCurrentStep((prev) => (prev + 1) % steps.length)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [steps.length])
 
   return (
     <div className="min-h-screen bg-white">
@@ -88,7 +88,7 @@ export default function HomePage() {
                   <div className="text-gray-600">Años de Historia</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600">>15%</div>
+                  <div className="text-3xl font-bold text-emerald-600">&gt;15%</div>
                   <div className="text-gray-600">Margen EBITDA</div>
                 </div>
                 <div className="text-center">
