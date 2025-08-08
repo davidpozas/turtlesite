@@ -1,9 +1,9 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
+"use client";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function HowWeWorkPage() {
-  const [activeStep, setActiveStep] = useState(0)
+  const [activeStep, setActiveStep] = useState(0);
 
   const steps = [
     {
@@ -76,11 +76,10 @@ export default function HowWeWorkPage() {
       ],
       timeline: "5-7 años"
     }
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -99,7 +98,6 @@ export default function HowWeWorkPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="pt-16 bg-gradient-to-br from-emerald-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-12">
@@ -115,7 +113,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Process Overview */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -125,7 +122,6 @@ export default function HowWeWorkPage() {
             </p>
           </div>
 
-          {/* Steps Navigation */}
           <div className="flex justify-center space-x-4 mb-12 overflow-x-auto">
             {steps.map((step, index) => (
               <button
@@ -133,8 +129,8 @@ export default function HowWeWorkPage() {
                 onClick={() => setActiveStep(index)}
                 className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 ${
                   index === activeStep
-                    ? 'bg-emerald-600 text-white scale-110 shadow-lg'
-                    : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    ? "bg-emerald-600 text-white scale-110 shadow-lg"
+                    : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                 }`}
               >
                 {step.number}
@@ -142,7 +138,6 @@ export default function HowWeWorkPage() {
             ))}
           </div>
 
-          {/* Active Step Details */}
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <div className="text-emerald-600 font-bold text-lg mb-2">
@@ -196,7 +191,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Target Profile */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -258,7 +252,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Investment Strategy */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -302,7 +295,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-emerald-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -323,7 +315,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -361,5 +352,5 @@ export default function HowWeWorkPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

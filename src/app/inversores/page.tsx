@@ -1,9 +1,9 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
+"use client";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function InvestorsPage() {
-  const [selectedDeal, setSelectedDeal] = useState(0)
+  const [selectedDeal, setSelectedDeal] = useState(0);
 
   const currentPipeline = [
     {
@@ -60,11 +60,10 @@ export default function InvestorsPage() {
         "Diversificación a formación privada"
       ]
     }
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -83,7 +82,6 @@ export default function InvestorsPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="pt-16 bg-gradient-to-br from-emerald-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-12">
@@ -99,7 +97,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Investment Thesis */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -181,7 +178,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Current Pipeline */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -191,7 +187,6 @@ export default function InvestorsPage() {
             </p>
           </div>
 
-          {/* Deal Selection */}
           <div className="flex justify-center space-x-4 mb-8 overflow-x-auto">
             {currentPipeline.map((deal, index) => (
               <button
@@ -199,8 +194,8 @@ export default function InvestorsPage() {
                 onClick={() => setSelectedDeal(index)}
                 className={`flex-shrink-0 px-6 py-3 rounded-lg font-medium transition-colors ${
                   index === selectedDeal
-                    ? 'bg-emerald-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-100'
+                    ? "bg-emerald-600 text-white"
+                    : "bg-white text-gray-600 hover:bg-gray-100"
                 }`}
               >
                 {deal.name}
@@ -208,7 +203,6 @@ export default function InvestorsPage() {
             ))}
           </div>
 
-          {/* Deal Details */}
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
@@ -273,7 +267,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Investment Process */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -335,7 +328,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Investor Profile */}
       <section className="py-20 bg-emerald-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -398,7 +390,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-emerald-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -419,7 +410,6 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -457,5 +447,5 @@ export default function InvestorsPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
