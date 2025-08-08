@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://turtlepondventures.com'),
   title: {
     default: "Turtle Pond Ventures - Transiciones Generacionales PYMES España",
     template: "%s | Turtle Pond Ventures"
