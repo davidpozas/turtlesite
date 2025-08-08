@@ -27,6 +27,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -45,6 +46,7 @@ export default function ContactPage() {
         </div>
       </nav>
 
+      {/* Hero Section */}
       <section className="pt-16 bg-gradient-to-br from-emerald-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-12">
@@ -59,9 +61,11 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Contact Form Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Informacion de Contacto</h2>
@@ -93,6 +97,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {/* What to Expect */}
               <div className="bg-emerald-50 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-4">Que Esperar</h3>
                 <ul className="space-y-3 text-gray-600">
@@ -116,6 +121,7 @@ export default function ContactPage() {
               </div>
             </div>
 
+            {/* Contact Form */}
             <div className="bg-white rounded-xl border border-gray-200 p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Envianos un Mensaje</h2>
               
@@ -231,6 +237,7 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
